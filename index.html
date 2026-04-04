@@ -12,10 +12,10 @@
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f9f9f9;
+            font-family: Georgia, "Times New Roman", serif;
+            line-height: 1.7;
+            color: #000;
+            background-color: #1a1a1a;
         }
         
         .container {
@@ -23,44 +23,90 @@
             margin: 0 auto;
             padding: 60px 40px;
             background-color: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border: 8px solid #000;
+            box-shadow: none;
         }
         
         h1 {
-            margin: 30px 0 20px 0;
-            color: #2c3e50;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
+            margin: 0 0 40px 0;
+            color: #000;
+            border-bottom: 8px solid #000;
+            border-top: 8px solid #000;
+            padding: 30px 0;
+            font-size: 3.2em;
+            font-weight: 900;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
         }
         
         h2 {
-            margin: 25px 0 15px 0;
-            color: #34495e;
-            font-size: 1.3em;
+            margin: 50px 0 25px 0;
+            color: #000;
+            font-size: 1.6em;
+            font-weight: 900;
+            border-bottom: 6px solid #000;
+            border-top: 6px solid #000;
+            padding: 15px 0;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
         }
         
         p {
             margin: 15px 0;
-            text-align: justify;
+            text-align: left;
         }
         
         ul {
-            margin: 15px 0 15px 30px;
+            margin: 20px 0 20px 40px;
         }
         
         li {
-            margin: 8px 0;
+            margin: 12px 0;
+            line-height: 1.8;
         }
         
         strong {
-            color: #2c3e50;
+            color: #000;
+            font-weight: bold;
+        }
+        
+        a {
+            color: #000;
+            text-decoration: underline;
+            text-decoration-thickness: 3px;
+            text-underline-offset: 4px;
+            font-weight: 600;
+        }
+        
+        a:hover {
+            background-color: #000;
+            color: #fff;
+            padding: 4px 6px;
+            text-decoration: none;
         }
         
         .profile-image {
             float: right;
-            margin: 0 0 20px 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            margin: 0 0 30px 30px;
+            border-radius: 0;
+            border: 6px solid #000;
+            box-shadow: none;
+        }
+        
+        h3 {
+            margin: 35px -40px 20px -40px;
+            padding: 20px 40px;
+            color: #ffffff;
+            background-color: #000;
+            font-size: 2.5em;
+            font-weight: 900;
+            font-family: "Courier New", monospace;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            border-left: 8px solid #000;
+            border-bottom: 8px solid #000;
+            border-top: 8px solid #000;
+            line-height: 1;
         }
     </style>
 </head>
@@ -94,7 +140,7 @@
         
         <h2>News</h2>
         
-        <h3 style="margin-top: 20px; color: #555; font-size: 1.1em;">2026</h3>
+        <h3>2026</h3>
         <ul>
             <li>Finally updated my website!</li>
             <li>Journal article <a href="https://doi.org/10.1007/s10664-025-10790-3">"RunBugRun: An executable dataset for automated program repair"</a> published in Empirical Software Engineering (congrats Julian!)</li>
@@ -107,7 +153,7 @@
             <li>Serving as MIP Award Co-Chair for <a href="https://2026.msrconf.org/">MSR 2026</a></li>
         </ul>
         
-        <h3 style="margin-top: 20px; color: #555; font-size: 1.1em;">2025</h3>
+        <h3>2025</h3>
         <ul>
             <li>Serving as PC Member for <a href="https://conf.researchr.org/home/fse-2026">FSE 2026</a> and <a href="https://conf.researchr.org/home/ase-2026">ASE 2026</a></li>
             <li>Paper <a href="https://doi.org/10.1109/ICSME64153.2025.00053">"ROSEAU: Fast, Accurate, Source-based Breaking Change Analysis in Java"</a> accepted at <a href="https://conf.researchr.org/home/icsme-2025">ICSME 2025</a> (congrats Corentin!)</li>
@@ -122,25 +168,25 @@
             <li>Serving as PC Member for <a href="https://conf.researchr.org/home/icse-2027">ICSE 2027</a></li>
         </ul>
         
-        <h3 style="margin-top: 20px; color: #555; font-size: 1.1em;">2024</h3>
+        <h3>2024</h3>
         <ul>
             <li>Made two vulgarization talks and participated to a roundtable about LLMs at the University of Bordeaux.</li>
             <li>Serving as PC Member for <a href="https://conf.researchr.org/home/icse-2025">ICSE 2025</a></li>
-            <li>Paper "Impermanent identifiers: Enhanced source code comprehension and refactoring" accepted at the JSS (congrats Eduardo!)</li>
+            <li>Paper <a href="https://doi.org/10.1016/j.jss.2024.112137">"Impermanent identifiers: Enhanced source code comprehension and refactoring"</a> accepted at the JSS (congrats Eduardo!)</li>
             <li>Organizing a special session of the GT GL-IA at the national Software Engineering Conference</li>
-            <li>Paper "Out of Context: How important is Local Context in Neural Program Repair?" accepted at <a href="https://conf.researchr.org/home/icse-2024">ICSE 2024</a> (congrats Julian!) and "What the Fix? A Study of ASAT Rules Documentation" at <a href="https://conf.researchr.org/home/icpc-2024">ICPC 2024</a> (congrats, Corentin!)</li>
-            <li>Paper "INSPECT: Intrinsic and Systematic Probing Evaluation for Code Transformers" accepted at TSE (congrats Anjan!)</li>
+            <li>Paper <a href="https://doi.org/10.1145/3597503.3639086">"Out of Context: How important is Local Context in Neural Program Repair?"</a> accepted at <a href="https://conf.researchr.org/home/icse-2024">ICSE 2024</a> (congrats Julian!) and <a href="https://doi.org/10.1145/3643916.3644404">"What the Fix? A Study of ASAT Rules Documentation"</a> at <a href="https://conf.researchr.org/home/icpc-2024">ICPC 2024</a> (congrats, Corentin!)</li>
+            <li>Paper <a href="https://doi.org/10.1109/TSE.2023.3341624">"INSPECT: Intrinsic and Systematic Probing Evaluation for Code Transformers"</a> accepted at TSE (congrats Anjan!)</li>
             <li>Serving as Keynote co-chair for <a href="https://2024.msrconf.org/">MSR 2024</a></li>
             <li>Serving as ERA track Co-chair for <a href="https://conf.researchr.org/home/saner-2024">SANER 2024</a></li>
             <li>Joined two CSI working groups: Generative AI (WG coordinator) and Internationalization</li>
             <li>Member of the Scientific Board (Conseil Scientifique d'Institut, CSI) of the CNRS Computer Science Institute (2024-2028)</li>
         </ul>
         
-        <h3 style="margin-top: 20px; color: #555; font-size: 1.1em;">2023</h3>
+        <h3>2023</h3>
         <ul>
             <li>Organizing a meeting of the GTs GL-IA and VL in Paris</li>
             <li>Serving as PC Member for <a href="https://conf.researchr.org/home/fse-2024">FSE 2024</a> and <a href="https://conf.researchr.org/home/icsme-2024">ICSME 2024</a></li>
-            <li>Paper "JEMMA: An extensible Java dataset for ML4Code applications" accepted at EMSE (congrats Anjan!)</li>
+            <li>Paper <a href="https://doi.org/10.1007/s10664-023-10334-3">"JEMMA: An Extensible Java dataset for ML4Code applications"</a> accepted at EMSE (congrats Anjan!)</li>
             <li>Serving as co-coordinator of the Working Group on Software Engineering and Artificial Intelligence (GT GL-IA) of the National Research Network on Software Engineering (GDR GPL)</li>
             <li>Joined the CNRS and the University of Bordeaux</li>
         </ul>
