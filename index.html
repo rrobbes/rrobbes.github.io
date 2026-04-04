@@ -75,12 +75,26 @@
         }
         
         ul {
-            margin: 20px 0 20px 40px;
+            margin: 20px 0 20px 0;
+            list-style: none;
         }
         
         li {
-            margin: 12px 0;
+            margin: 0 0 12px 0;
             line-height: 1.8;
+            list-style: none;
+            padding-left: 12px;
+            position: relative;
+        }
+        
+        li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 4px;
+            bottom: 4px;
+            width: 4px;
+            background-color: #000;
         }
         
         strong {
@@ -204,7 +218,7 @@
         <ul>
             <li>Organizing a meeting of the GTs GL-IA and VL in Paris</li>
             <li>Serving as PC Member for <a href="https://conf.researchr.org/home/fse-2024">FSE 2024</a> and <a href="https://conf.researchr.org/home/icsme-2024">ICSME 2024</a></li>
-            <li>Paper <a href="https://doi.org/10.1007/s10664-023-10334-3">"JEMMA: An Extensible Java dataset for ML4Code applications"</a> accepted at EMSE (congrats Anjan!)</li>
+            <li>Paper <a href="https://doi.org/10.1007/s10664-022-10275-7">"JEMMA: An Extensible Java dataset for ML4Code applications"</a> accepted at EMSE (congrats Anjan!)</li>
             <li>Serving as co-coordinator of the Working Group on Software Engineering and Artificial Intelligence (GT GL-IA) of the National Research Network on Software Engineering (GDR GPL)</li>
             <li>Joined the CNRS and the University of Bordeaux</li>
         </ul>
